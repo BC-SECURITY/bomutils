@@ -483,7 +483,7 @@ int main( int argc, char * argv[] ) {
   bool isFileListSource = false;
 
   while (true) {
-    char c = getopt(argc, argv, "hiu:g:");
+    int c = getopt(argc, argv, "hiu:g:");
     if (c == -1) {
       break;
     }
