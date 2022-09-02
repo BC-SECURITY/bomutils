@@ -145,7 +145,7 @@ int main(int argc, char *argv[]) {
   char params[16] = "";
 
   while (true) {
-    char c = getopt(argc, argv, "hsfdlbcmxp:D::");
+    int c = getopt(argc, argv, "hsfdlbcmxp:D::");
     if (c == -1) {
       break;
     }
